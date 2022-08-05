@@ -1,0 +1,59 @@
+{% load cms_tags menu_tags sekizai_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="">
+  <title>{% block title %}{% endblock title %}</title>
+
+    {% include 'includes/css.html' %}
+
+    {% block stylesheet %}{% endblock %}
+    {% render_block "css" %}
+
+</head>
+<body>
+    {% cms_toolbar %}
+
+    <!-- Page Start -->
+    <div class="page">
+        <header class="header">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="logo">
+                        <a class="navbar-brand l-light" href="/">
+                            {% static_placeholder 'Header' %}
+                            {% include 'includes/header.html'%}
+                        </a>
+                    </div>          
+                </div>
+            </nav>
+        </header>
+        <main>
+            {% block content %}
+                
+            {% endblock content %}
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    {% static_placeholder 'Footer' %}
+                    {% include 'includes/footer.html'%}
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                {% static_placeholder 'Copyright Text' %}
+            </div>
+        </div>
+        {% include 'includes/js.html' %}
+    </div>        
+</body>
+</html>

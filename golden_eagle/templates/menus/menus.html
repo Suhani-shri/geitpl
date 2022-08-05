@@ -1,0 +1,22 @@
+{% load static %}
+{% load menu_tags %}
+{% load cms_tags menu_tags sekizai_tags %}
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto">
+        
+        {% for child in children %}
+            <li class="nav-item {% if child.children %} dropdown {% endif %}">
+                    <a class="nav-link active {% if child.children %} dropdown-toggle {% endif %}" {% if child.children %} id="navbarDropdown1" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false" {% else%} aria-current="page" href="{{ child.get_absolute_url }}" {% endif %}>{{child.get_menu_title }}</a>
+
+                {% if child.children %}
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    {% show_menu from_level to_level extra_inactive extra_active template "" "" child %}
+                    </ul>
+                    {% show_menu 0 10 10 10 "menus/sub_menus.html" %}
+                {% endif %}
+            </li>
+        {% endfor %}
+  </ul>
+</div>

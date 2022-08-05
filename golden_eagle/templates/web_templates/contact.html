@@ -1,0 +1,202 @@
+{% extends 'web_templates/base.html' %}
+
+{% load static %}
+{% load cms_tags %}
+{% load menu_tags %}
+
+{% block title %} {% page_attribute page_title %} - Custom Software Development Company | Golden Eagle IT Technologies {% endblock %}
+
+{% block content %}
+
+<!-- Site Main Start -->
+<div class="site-main">
+  <!-- Page Title Section Start -->
+  <div class="cmt-page-title-row bg-base-dark cmt-bg cmt-bgimage-yes clearfix PageTitleSection">
+    <div class="cmt-titlebar-wrapper-bg-layer cmt-bg-layer"></div>
+    <div class="container">
+      <div class="cmt-page-title-row-inner">
+        <div class="page-title-heading">
+          <h2 class="title">Contact Us</h2>
+        </div>
+        <div class="breadcrumb-wrapper">
+          <span>
+            <a title="Homepage" href="/">Home</a>
+          </span>
+          <span>Contact us</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title Section Start -->
+
+
+  <!-- Contact Details Section Start -->
+  <section class="cmt-row conatct-section bg-img6 clearfix contactDetailSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title title-style-center_text">
+            <div class="title-header pb-0">
+              <h3>We are just a Click Away!</h3>
+              <h2 class="title">Discuss your ideas with our Technology Experts!</h2>
+            </div>
+            <div class="text-center">
+              <h6>How would you like us to connect ?</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="featured-icon-box icon-align-before-content p-25 bg-base-white border border-color border-rad_5">
+            <div class="featured-icon">
+              <div
+                class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-darkgrey cmt-icon_element-size-sm cmt-icon_element-style-round">
+                <i class="flaticon flaticon-phone-call"></i>
+              </div>
+            </div>
+            <div class="featured-content">
+              <div class="featured-title">
+                <h2 class="fs-15 fw-normal bodyfont-color mb-5">We love phone calls</h2>
+                <h4 class="fs-20 text-base-skin mb-0">+91 95843-09000</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="featured-icon-box icon-align-before-content p-25 bg-base-white border border-color border-rad_6">
+            <div class="featured-icon">
+              <div
+                class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-darkgrey cmt-icon_element-size-sm cmt-icon_element-style-round">
+                <img src="{% static 'images/whatsapp-white.png' %}" alt="whatsapp" width="30" height="30" class="mt_5 ml-3">
+              </div>
+            </div>
+            <div class="featured-content">
+              <div class="featured-title">
+                <h2 class="fs-15 fw-normal bodyfont-color mb-0">Whats app is the latest magic.</h2>
+                <h3 class="fs-20 text-base-skin mb-0">+91 95843-09000</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="featured-icon-box icon-align-before-content p-25 bg-base-white border border-color border-rad_6">
+            <div class="featured-icon">
+              <div
+                class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-darkgrey cmt-icon_element-size-sm cmt-icon_element-style-round">
+                <i class="flaticon flaticon-envelope"></i>
+              </div>
+            </div>
+            <div class="featured-content">
+              <div class="featured-title">
+                <h2 class="fs-15 fw-normal bodyfont-color mb-0">You love detailing? Please mail us.</h2>
+                <h3 class="fs-20 text-base-skin mb-0">info@geitpl.com</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Details Section End -->
+
+
+  <!-- Contact Form Section Start -->
+  <section class="cmt-row padding_top_zero-section bg-layer-equal-height clearfix contactMiddleSection">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-5 col-lg-5">
+          <div class="cmt-bg cmt-col-bgcolor-yes bg-base-dark cmt-bg border-rad_2 overflow-hidden spacing-6">
+            <div class="layer-content">
+              <div class="section-title">
+                <div class="title-header">
+                  <h3>Need Some Advice?</h3>
+                  <h2 class="title mb-0">Feel free to contact us!</h2>
+                </div>
+              </div>
+              <div class="featured-icon-box icon-align-before-content p-25 border border-color border-rad_2">
+                <div class="featured-icon">
+                  <div
+                    class="cmt-icon cmt-icon_element-fill cmt-icon_element-color-skincolor cmt-icon_element-size-sm cmt-icon_element-style-round">
+                    <i class="flaticon flaticon-pin"></i>
+                  </div>
+                </div>
+                <div class="featured-content">
+                  <div class="featured-title">
+                    <h2 class="fs-15 fw-normal mb-5">Location</h2>
+                    <h3 class="fs-15 fw-normal mb-0">205, NRK Bizz Park, PU4, Vijay nagar, Indore, Madhya Pradesh,
+                      452010</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="g-map mt-30" id="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.365571825472!2d75.89482001533733!3d22.7518106321016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2c99432dc5b%3A0x856ffb203358138!2sGolden%20Eagle%20IT%20Technologies%20Pvt.%20Ltd.%20(Mobile%20and%20web%20development%20company)!5e0!3m2!1sen!2sin!4v1657531489757!5m2!1sen!2sin"
+                  width="370" height="240" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-7">
+          <div class="pl_20">
+            <div class="section-title">
+              <div class="title-header">
+                <h3>Contact us</h3>
+                <h2 class="title">Begin a Quick discussion</h2>
+              </div>
+            </div>
+            <form action="#" class="query_form wrap-form clearfix" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>
+                    <span class="text-input"><input name="name" type="text" value="" placeholder="First Name"
+                        required="required"></span>
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <label>
+                    <span class="text-input"><input name="name" type="text" value="" placeholder="Last Name"
+                        required="required"></span>
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <label>
+                    <span class="text-input"><input name="email" type="text" value="" placeholder="Email Address"
+                        required="required"></span>
+                  </label>
+                </div>
+                <div class="col-md-6">
+                  <label>
+                    <span class="text-input"><input name="phone" type="text" value="" placeholder="Phone"
+                        required="required"></span>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <label>
+                    <span class="text-input"><input name="subject" type="text" value="" placeholder="Subject"
+                        required="required"></span>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <label>
+                    <span class="text-input"><textarea name="message" rows="4" placeholder="Message goes here"
+                        required="required"></textarea></span>
+                  </label>
+                </div>
+                <div class="col-md-12">
+                  <button class="submit cmt-btn btn-default cmt-icon-btn-left cmt-btn-size-md cmt-btn-color-dark mt-5"
+                    type="submit"><i class="icon-right"></i><span>Send Message</span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Form Section Start -->
+
+</div>
+<!--site-main end-->
+{% endblock content %}

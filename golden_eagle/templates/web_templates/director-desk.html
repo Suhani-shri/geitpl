@@ -1,0 +1,87 @@
+{% extends 'web_templates/base.html' %}
+
+{% load static %}
+{% load cms_tags %}
+
+{% block title %} {% page_attribute page_title %} - Custom Software Development Company | Golden Eagle IT Technologies {% endblock %}
+
+{% block content %}
+
+<!-- Site Main Start -->
+<div class="site-main">
+  <!-- Page Title Section Start -->
+  <div class="cmt-page-title-row bg-base-dark cmt-bg cmt-bgimage-yes clearfix PageTitleSection">
+    <div class="cmt-titlebar-wrapper-bg-layer cmt-bg-layer"></div>
+    <div class="container">
+      <div class="cmt-page-title-row-inner">
+        <div class="page-title-heading">
+          <h2 class="title">Director’s Desk</h2>
+        </div>
+        <div class="breadcrumb-wrapper">
+          <span>
+            <a title="Homepage" href="index.php">Home</a>
+          </span>
+          <span>Director’s desk</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page Title Section Start -->
+
+
+  <!-- Director Section Start -->
+  <section class="cmt-row clearfix directorSection">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12">
+          <div class="cmt-featured-wrapper">
+            <div class="featured-thumbnail">
+              <img width="460" height="580" class="img-fluid border-rad_4" src="{% static 'images/team-member/chandan-kumar.jpg' %}"
+                alt="image">
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-7 col-md-12 col-sm-12">
+          <div class="cmt-team-member-detail">
+            <h4>“We believe in par excellence with no plan-B. A team that is curated with a winners mindset and
+              technologist DNA.”</h4>
+            <p>For almost a decade Golden Eagle has emerged as the most advanced technology company offering state of
+              the art custom
+              software development services to startups, SME,s and Enterprises globally. </p>
+            <p>At Golden Eagle our team members collaborate in a string to ensure the best possible outcome with a
+              defined objective.
+              With highly versatile teamwork and their skills we have developed a vast client portfolio spanning
+              successful brands in 20 countries.
+            </p>
+            <p>We are very happy that Golden Eagle has the best team who works as a family and they come with rich
+              experience in varied domains and technologies. Thanks to our capacity to adapt to dynamic innovations
+              while keeping the remarkable needs of our regarded clients at the front line of the company’s core interest.</p>
+            <p>Our strength is developed by our unique ideas and values, wherein we develop excellent and smart services by
+              giving equal importance to all stakeholders involved in the chain, such as our diverse talented work team, partners, clients, and the society.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="cmt-team-member-content">
+            <p>All you need to do is to let us know how we can assist you. We are looking forward to working with you as your Technology Partner and craft innovative
+            IT solutions that would not only improve the efficiency of your organisational procedures but also contribute towards the success of your business.</p>
+            <p>Our team is happy to answer your question about our services. We always welcome a call or meeting at a convenient time for you to learn more about
+              our product/service and also welcome you to our office for a better understanding between us.</p>
+              <p>Innovative IT solutions not only improve processes but also gain the success of your business.</p>
+              <p>We stand by the Motto; your success our Dream!</p>
+          </div>
+          <div class="director_title">
+            <h3>Thanks,</h3>
+            <h2>Chandan Kumar Malik</h2>
+            <h4>Co- founder, Golden Eagle Technologies</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Director Section End -->
+
+</div>
+<!--site-main end-->
+{% endblock content %}
