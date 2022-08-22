@@ -245,3 +245,29 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+DJANGOCMS_ICON_TEMPLATES = [
+    ('svg', 'SVG template'),
+]
+
+DJANGOCMS_ICON_SETS = [
+    ('fontawesome4', 'fa', 'Font Awesome 4'),
+]
+
+DJANGOCMS_ICON_SETS = [
+    ('elusiveicon', 'el', 'Elusive Icons'),
+    ('flagicon', 'flag-icon', 'Flag Icons'),
+    ('fontawesome4', 'fa', 'Font Awesome 4'),
+    ('fontawesome5regular', 'far', 'Font Awesome 5 Regular'),
+    ('fontawesome5solid', 'fas', 'Font Awesome 5 Solid'),
+    ('fontawesome5brands', 'fab', 'Font Awesome 5 Brands'),
+    ('fontawesome5light', 'fal', 'Font Awesome 5 Light', 
+    '5.3.1_pro'),
+    ('glyphicon', 'glyphicon', 'Glyphicons'),
+    ('ionicon', 'ion', 'Ionicons Icons'),
+    ('mapicon', 'map-icon', 'Map Icons'),
+    ('materialdesign', 'zmdi', 'Material Design'),
+    ('octicon', 'octicon', 'Octicons'),
+    ('typicon', 'typcn', 'Typicons'),
+    ('weathericon', 'wi', 'Weather Icons'),
+]
