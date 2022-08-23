@@ -5679,6 +5679,7 @@ footer .g-map iframe {
     GoTop BUtton
 ------------------------*/
 #totop {
+  padding: 2px;
   font-weight: 900;
   color: #fff;
   display: none;
@@ -6849,4 +6850,6 @@ section.error-404 .page-content p {
 .contactMiddleSection .featured-title h3{
   line-height: 22px !important;
 }
-
+.collapse-text-left{
+  padding-left: 240px;
+}
